@@ -8,7 +8,7 @@ const schema = new Schema({
         required: [true, "O nome é obrigatório"],
         trim: true,
     },
-    slug: {
+    slug_name: {
         type: String,
         required: [true, "O slug é obrigatório"],
         trim: true,
