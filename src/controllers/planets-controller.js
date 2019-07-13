@@ -56,9 +56,10 @@ exports.getById = (req, res, next) => {
 exports.post = (req, res, next) => {
     var planet = new Planet(req.body);
     planet
-        .save().then(x => {
+        .save().then(data => {
             res.status(201).send({
-                message: "Planeta inserido com sucesso!"
+                message: "Planeta inserido com sucesso!",
+                planeta: data,
             });
         }).catch(e => {
             res.status(400).send({

@@ -12,7 +12,7 @@ const schema = new Schema({
         type: String,
         required: [true, "O slug é obrigatório"],
         trim: true,
-        unique: true,
+        index: true,
     },
     climate: {
         type: String,
