@@ -33,5 +33,4 @@ const planetsRoutes = require('./routes/planets-route');
 app.use('/', indexRoute);
 app.use('/planets', planetsRoutes);
 
-
 module.exports = app;
